@@ -1,0 +1,28 @@
+time_period_names: ["one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten" "eleven" "twelve" 
+                    "thirteen" "fourteen" "fifteen" "sixteen" "seventeen" "eighteen" "ninteen" "twenty" "twenty-one" "twenty-two" "twenty-three" "twenty-four"]
+EV_names: ["EV1" "EV2" "EV3" "EV4" "EV5" "EV6" "EV7" "EV8" "EV9" "EV10" "EV11" "EV12"]
+charger: 12
+price_of_charging: [9 9 8 8 7 8 10 15 17 17 18 19 23 24 24 26 26 26 30 30 28 15 13 10]
+price_of_discharging: [2 2 1 0 0 2 5 8 10 10 12 13 17 18 20 23 23 23 31 30 26 7 3 1] 
+working_time: [1 1 1 1 1 0 1 0 1 1 0 1 1 0 1 0 1 1 0 1 1 1 1 0
+               1 1 1 1 1 1 0 1 0 1 0 1 1 0 1 0 0 1 0 1 1 1 1 1
+               1 1 1 1 1 0 1 1 0 1 1 0 1 1 0 1 0 0 1 0 1 1 1 1
+               1 0 1 1 1 1 0 1 1 0 1 1 0 1 1 1 0 1 1 0 1 1 1 1
+               1 1 1 1 1 1 0 1 1 0 1 1 0 1 1 1 0 1 1 1 0 1 1 1
+               1 1 1 0 1 1 1 0 1 0 1 1 1 1 0 1 0 1 1 1 1 0 1 1 
+               1 1 1 1 1 1 1 0 1 1 0 1 1 1 0 1 1 0 1 1 1 1 0 1
+               1 1 1 1 1 1 1 0 1 0 1 0 1 1 1 0 1 0 0 1 1 1 1 1
+               1 1 1 1 1 1 1 0 1 1 1 1 1 0 1 1 0 1 1 0 1 1 1 1
+               1 1 1 0 1 1 1 1 0 1 0 1 1 0 1 0 0 1 0 1 0 1 1 1
+               1 1 0 1 1 1 1 1 0 1 1 1 1 1 0 1 1 0 1 1 1 0 1 1
+               1 1 0 1 1 1 1 1 0 1 1 1 1 1 1 0 1 0 1 0 1 1 0 1]
+working_energy_cost: [20 20 20 20 20 20 20 20 20 20 20 20]
+charge_power_max:[240 240 240 200 200 200 200 200 200 200 240 240 240 240 240 200 200 200 240 240 280 280 280 240]
+discharge_power_max:[200 200 200 180 180 180 180 180 180 200 200 200 200 200 180 180 180 180 200 200 200 200 200 200]
+battery_max: [80 80 80 80 80 80 80 80 80 80 80 80]
+battery_min: [20 20 20 20 20 20 20 20 20 20 20 20]
+battery_for_work: [50 50 50 50 50 50 50 50 50 50 50 50]
+charging_rate: 30
+discharging_rate: 20
+eta: 0.95
+initial_SOC: 40

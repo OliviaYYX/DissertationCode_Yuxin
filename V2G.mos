@@ -1,0 +1,201 @@
+model V2G !with discharging with control model
+  uses "mmxprs"
+
+  declarations
+    number_of_time_periods = 24
+    time_period = 1.. number_of_time_periods
+    time_period_names : array(time_period) of string
+
+    number_of_EVs = 12
+    EV = 1.. number_of_EVs
+    EV_names : array(EV) of string
+
+    charger : real !integer
+    price_of_charging : array(time_period) of real
+    price_of_discharging : array(time_period) of real
+
+    working_time : array(EV,time_period) of real
+    working_energy_cost : array(EV) of real
+
+    charge_power_max : array(time_period) of real
+    discharge_power_max : array(time_period) of real
+
+    battery_max : array(EV) of real
+    battery_min : array(EV) of real
+    battery_for_work : array(EV) of real
+
+    charging_rate : real
+    discharging_rate : real
+
+    charging_status : array(EV,time_period) of mpvar
+    discharging_status : array(EV,time_period) of mpvar
+
+    !SOC limitations
+    eta : real !(0.95 is (1 -  minus the loss))
+    initial_SOC : real
+    SOC_level : array(EV,time_period) of mpvar
+
+    !Objective:linctr
+  end-declarations
+
+  initialisations from "Dissertation.dat"
+    time_period_names EV_names charger price_of_charging price_of_discharging working_time working_energy_cost charge_power_max discharge_power_max battery_max battery_min battery_for_work
+    charging_rate discharging_rate eta initial_SOC
+  end-initialisations
+
+  !binary
+  forall(i in EV, t in time_period) do
+    charging_status(i,t) is_binary
+    discharging_status(i,t) is_binary
+  end-do
+
+  !constraints
+
+  !state of charge
+  forall(i in EV) do
+    if (working_time(i,1) = 1) then
+      SOC_level(i,1) = initial_SOC + eta*charging_status(i,1)*charging_rate - (1/eta)*discharging_status(i,1)*discharging_rate
+    end-if
+    if (working_time(i,1) = 0) then
+      SOC_level(i,1) = initial_SOC - working_energy_cost(i)
+    end-if
+  end-do
+
+  forall(i in EV, t in time_period) do
+    if(2 <= t and t <= number_of_time_periods) then
+      if (working_time(i,t) = 1) then
+        SOC_level(i,t) = SOC_level(i,t-1) + eta*charging_status(i,t)*charging_rate - (1/eta)*discharging_status(i,t)*discharging_rate
+      end-if
+      if (working_time(i,t) = 0) then
+        SOC_level(i,t) = SOC_level(i,t-1) - working_energy_cost(i)
+      end-if
+    end-if
+  end-do
+
+  !by the end of day back to initial SOC
+  forall(i in EV) do
+    SOC_level(i, number_of_time_periods) >= initial_SOC
+  end-do
+
+  !charging limit at time period t
+  forall(t in time_period) do
+    sum(i in EV) charging_status(i,t)*charging_rate <= charge_power_max(t) !power max
+  end-do
+
+  !charging battery capacity
+  forall(i in EV, t in time_period) do
+    SOC_level(i,t) <= battery_max(i)
+  end-do
+
+  !charging only at not working time
+  forall(i in EV, t in time_period) do
+    charging_status(i,t) <= working_time(i,t)
+  end-do
+
+  !discharging limit at time period t
+  forall(t in time_period) do
+    sum(i in EV) discharging_status(i,t)*discharging_rate <= discharge_power_max(t)
+  end-do
+
+  !discharging battery capacity
+  forall(i in EV, t in time_period) do
+    SOC_level(i,t) >= battery_min(i)
+  end-do
+
+  !discharging only at not working time
+  forall(i in EV, t in time_period) do
+    discharging_status(i,t) <= working_time(i,t)
+  end-do
+
+  !battery capacity limit before out to work
+  forall(i in EV, t in time_period) do
+    if(t+1 <= number_of_time_periods) then
+      if(working_time(i,t+1) = 0) then
+        SOC_level(i,t) >= battery_for_work(i)
+      end-if
+    end-if
+  end-do
+
+  !charger limit
+  forall(t in time_period) do
+    sum(i in EV) charging_status(i,t) + sum(i in EV) discharging_status(i,t) <= charger
+  end-do
+
+  !charging and discharging not happen together
+  forall(i in EV, t in time_period) do
+    charging_status(i,t) + discharging_status(i,t) <= 1
+  end-do
+
+  !objective function
+  obj := sum(t in time_period, i in EV) (charging_status(i,t)*charging_rate*price_of_charging(t)) - sum(t in time_period,i in EV) (discharging_status(i,t)*discharging_rate*price_of_discharging(t))
+
+  minimise(obj)
+
+  fopen("out_V2G.txt",F_OUTPUT)
+  forall(i in EV) do
+    write("The initial SOC of ", EV_names(i), " is ", initial_SOC, ".")
+    writeln
+    forall(t in time_period) do
+      if(working_time(i,t)=1) then
+        if(getsol(charging_status(i,t))=1) then
+        write("At time period ", time_period_names(t), ", ", EV_names(i), " is charging")
+        end-if
+        if(getsol(discharging_status(i,t))=1) then
+        write("At time period ", time_period_names(t), ", ", EV_names(i), " is selling back")
+        end-if
+        if(getsol(charging_status(i,t))=0 and getsol(discharging_status(i,t))=0) then
+        write("At time period ", time_period_names(t), ", ", EV_names(i), " has nothing to do")
+        end-if
+      else
+      write("At time period ", time_period_names(t), ", ", EV_names(i), " is out to work")
+      end-if
+    write(", and the state of charge is ", getsol(SOC_level(i,t)))
+    writeln
+    end-do
+    writeln
+  end-do
+
+  writeln("The minimum cost is ",getobjval,".")
+  fclose(F_OUTPUT)
+
+  fopen("out_V2G.csv", F_OUTPUT)
+    write("Status",",")
+    forall(t in time_period) do
+    write(time_period_names(t), ",")
+    end-do
+    writeln
+    forall(i in EV) do
+    write(EV_names(i), ",")
+      forall(t in time_period) do
+        if(working_time(i,t)=1) then
+          if(getsol(charging_status(i,t))=1) then
+          write("Charge", ",")
+          end-if
+          if(getsol(discharging_status(i,t))=1) then
+          write("Discharge", ",")
+          end-if
+          if(getsol(charging_status(i,t))=0 and getsol(discharging_status(i,t))=0) then
+          write("Nothing", ",")
+          end-if
+        else
+        write("Delivery", ",")
+        end-if
+      end-do
+      writeln
+    end-do
+    writeln
+    write("SOC",",")
+    forall(t in time_period) do
+    write(time_period_names(t), ",")
+    end-do
+    writeln
+    forall(i in EV) do
+      write(EV_names(i), ",")
+      forall(t in time_period) do
+      write(getsol(SOC_level(i,t)), ",")
+      end-do
+      writeln
+    end-do
+  fclose(F_OUTPUT)
+
+end-model

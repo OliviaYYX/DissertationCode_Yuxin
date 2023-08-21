@@ -1,0 +1,313 @@
+The initial SOC of EV1 is 40.
+At time period one, EV1 has nothing to do, and the state of charge is 40
+At time period two, EV1 has nothing to do, and the state of charge is 40
+At time period three, EV1 is charging, and the state of charge is 68.5
+At time period four, EV1 has nothing to do, and the state of charge is 68.5
+At time period five, EV1 has nothing to do, and the state of charge is 68.5
+At time period six, EV1 is out to work, and the state of charge is 48.5
+At time period seven, EV1 is charging, and the state of charge is 77
+At time period eight, EV1 is out to work, and the state of charge is 57
+At time period nine, EV1 has nothing to do, and the state of charge is 57
+At time period ten, EV1 has nothing to do, and the state of charge is 57
+At time period eleven, EV1 is out to work, and the state of charge is 37
+At time period twelve, EV1 is charging, and the state of charge is 65.5
+At time period thirteen, EV1 has nothing to do, and the state of charge is 65.5
+At time period fourteen, EV1 is out to work, and the state of charge is 45.5
+At time period fifteen, EV1 is charging, and the state of charge is 74
+At time period sixteen, EV1 is out to work, and the state of charge is 54
+At time period seventeen, EV1 has nothing to do, and the state of charge is 54
+At time period eighteen, EV1 has nothing to do, and the state of charge is 54
+At time period ninteen, EV1 is out to work, and the state of charge is 34
+At time period twenty, EV1 has nothing to do, and the state of charge is 34
+At time period twenty-one, EV1 has nothing to do, and the state of charge is 34
+At time period twenty-two, EV1 has nothing to do, and the state of charge is 34
+At time period twenty-three, EV1 is charging, and the state of charge is 62.5
+At time period twenty-four, EV1 is out to work, and the state of charge is 42.5
+
+The initial SOC of EV2 is 40.
+At time period one, EV2 has nothing to do, and the state of charge is 40
+At time period two, EV2 has nothing to do, and the state of charge is 40
+At time period three, EV2 has nothing to do, and the state of charge is 40
+At time period four, EV2 has nothing to do, and the state of charge is 40
+At time period five, EV2 is charging, and the state of charge is 68.5
+At time period six, EV2 has nothing to do, and the state of charge is 68.5
+At time period seven, EV2 is out to work, and the state of charge is 48.5
+At time period eight, EV2 is charging, and the state of charge is 77
+At time period nine, EV2 is out to work, and the state of charge is 57
+At time period ten, EV2 has nothing to do, and the state of charge is 57
+At time period eleven, EV2 is out to work, and the state of charge is 37
+At time period twelve, EV2 is charging, and the state of charge is 65.5
+At time period thirteen, EV2 has nothing to do, and the state of charge is 65.5
+At time period fourteen, EV2 is out to work, and the state of charge is 45.5
+At time period fifteen, EV2 is charging, and the state of charge is 74
+At time period sixteen, EV2 is out to work, and the state of charge is 54
+At time period seventeen, EV2 is out to work, and the state of charge is 34
+At time period eighteen, EV2 is charging, and the state of charge is 62.5
+At time period ninteen, EV2 is out to work, and the state of charge is 42.5
+At time period twenty, EV2 is selling back, and the state of charge is 21.44736842
+At time period twenty-one, EV2 has nothing to do, and the state of charge is 21.44736842
+At time period twenty-two, EV2 has nothing to do, and the state of charge is 21.44736842
+At time period twenty-three, EV2 has nothing to do, and the state of charge is 21.44736842
+At time period twenty-four, EV2 is charging, and the state of charge is 49.94736842
+
+The initial SOC of EV3 is 40.
+At time period one, EV3 has nothing to do, and the state of charge is 40
+At time period two, EV3 has nothing to do, and the state of charge is 40
+At time period three, EV3 has nothing to do, and the state of charge is 40
+At time period four, EV3 has nothing to do, and the state of charge is 40
+At time period five, EV3 is charging, and the state of charge is 68.5
+At time period six, EV3 is out to work, and the state of charge is 48.5
+At time period seven, EV3 is charging, and the state of charge is 77
+At time period eight, EV3 has nothing to do, and the state of charge is 77
+At time period nine, EV3 is out to work, and the state of charge is 57
+At time period ten, EV3 has nothing to do, and the state of charge is 57
+At time period eleven, EV3 has nothing to do, and the state of charge is 57
+At time period twelve, EV3 is out to work, and the state of charge is 37
+At time period thirteen, EV3 is charging, and the state of charge is 65.5
+At time period fourteen, EV3 has nothing to do, and the state of charge is 65.5
+At time period fifteen, EV3 is out to work, and the state of charge is 45.5
+At time period sixteen, EV3 is charging, and the state of charge is 74
+At time period seventeen, EV3 is out to work, and the state of charge is 54
+At time period eighteen, EV3 is out to work, and the state of charge is 34
+At time period ninteen, EV3 is charging, and the state of charge is 62.5
+At time period twenty, EV3 is out to work, and the state of charge is 42.5
+At time period twenty-one, EV3 is selling back, and the state of charge is 21.44736842
+At time period twenty-two, EV3 has nothing to do, and the state of charge is 21.44736842
+At time period twenty-three, EV3 has nothing to do, and the state of charge is 21.44736842
+At time period twenty-four, EV3 is charging, and the state of charge is 49.94736842
+
+The initial SOC of EV4 is 40.
+At time period one, EV4 is charging, and the state of charge is 68.5
+At time period two, EV4 is out to work, and the state of charge is 48.5
+At time period three, EV4 has nothing to do, and the state of charge is 48.5
+At time period four, EV4 is charging, and the state of charge is 77
+At time period five, EV4 has nothing to do, and the state of charge is 77
+At time period six, EV4 has nothing to do, and the state of charge is 77
+At time period seven, EV4 is out to work, and the state of charge is 57
+At time period eight, EV4 has nothing to do, and the state of charge is 57
+At time period nine, EV4 has nothing to do, and the state of charge is 57
+At time period ten, EV4 is out to work, and the state of charge is 37
+At time period eleven, EV4 is charging, and the state of charge is 65.5
+At time period twelve, EV4 has nothing to do, and the state of charge is 65.5
+At time period thirteen, EV4 is out to work, and the state of charge is 45.5
+At time period fourteen, EV4 has nothing to do, and the state of charge is 45.5
+At time period fifteen, EV4 is charging, and the state of charge is 74
+, and the state of charge is 52.94736842
+At time period seventeen, EV4 is out to work, and the state of charge is 32.94736842
+At time period eighteen, EV4 is charging, and the state of charge is 61.44736842
+At time period ninteen, EV4 has nothing to do, and the state of charge is 61.44736842
+At time period twenty, EV4 is out to work, and the state of charge is 41.44736842
+At time period twenty-one, EV4 is selling back, and the state of charge is 20.39473684
+At time period twenty-two, EV4 has nothing to do, and the state of charge is 20.39473684
+At time period twenty-three, EV4 has nothing to do, and the state of charge is 20.39473684
+At time period twenty-four, EV4 is charging, and the state of charge is 48.89473684
+
+The initial SOC of EV5 is 40.
+At time period one, EV5 has nothing to do, and the state of charge is 40
+At time period two, EV5 has nothing to do, and the state of charge is 40
+At time period three, EV5 has nothing to do, and the state of charge is 40
+At time period four, EV5 has nothing to do, and the state of charge is 40
+At time period five, EV5 is charging, and the state of charge is 68.5
+At time period six, EV5 has nothing to do, and the state of charge is 68.5
+At time period seven, EV5 is out to work, and the state of charge is 48.5
+At time period eight, EV5 is charging, and the state of charge is 77
+At time period nine, EV5 has nothing to do, and the state of charge is 77
+At time period ten, EV5 is out to work, and the state of charge is 57
+At time period eleven, EV5 has nothing to do, and the state of charge is 57
+At time period twelve, EV5 has nothing to do, and the state of charge is 57
+At time period thirteen, EV5 is out to work, and the state of charge is 37
+At time period fourteen, EV5 is charging, and the state of charge is 65.5
+At time period fifteen, EV5 has nothing to do, and the state of charge is 65.5
+At time period sixteen, EV5 has nothing to do, and the state of charge is 65.5
+At time period seventeen, EV5 is out to work, and the state of charge is 45.5
+At time period eighteen, EV5 is charging, and the state of charge is 74
+At time period ninteen, EV5 is selling back, and the state of charge is 52.94736842
+At time period twenty, EV5 has nothing to do, and the state of charge is 52.94736842
+At time period twenty-one, EV5 is out to work, and the state of charge is 32.94736842
+At time period twenty-two, EV5 has nothing to do, and the state of charge is 32.94736842
+At time period twenty-three, EV5 has nothing to do, and the state of charge is 32.94736842
+At time period twenty-four, EV5 is charging, and the state of charge is 61.44736842
+
+The initial SOC of EV6 is 40.
+At time period one, EV6 has nothing to do, and the state of charge is 40
+At time period two, EV6 has nothing to do, and the state of charge is 40
+At time period three, EV6 is charging, and the state of charge is 68.5
+At time period four, EV6 is out to work, and the state of charge is 48.5
+At time period five, EV6 is charging, and the state of charge is 77
+At time period six, EV6 has nothing to do, and the state of charge is 77
+At time period seven, EV6 has nothing to do, and the state of charge is 77
+At time period eight, EV6 is out to work, and the state of charge is 57
+At time period nine, EV6 has nothing to do, and the state of charge is 57
+At time period ten, EV6 is out to work, and the state of charge is 37
+At time period eleven, EV6 is charging, and the state of charge is 65.5
+At time period twelve, EV6 has nothing to do, and the state of charge is 65.5
+At time period thirteen, EV6 has nothing to do, and the state of charge is 65.5
+At time period fourteen, EV6 has nothing to do, and the state of charge is 65.5
+At time period fifteen, EV6 is out to work, and the state of charge is 45.5
+At time period sixteen, EV6 is charging, and the state of charge is 74
+At time period seventeen, EV6 is out to work, and the state of charge is 54
+At time period eighteen, EV6 has nothing to do, and the state of charge is 54
+At time period ninteen, EV6 is selling back, and the state of charge is 32.94736842
+At time period twenty, EV6 has nothing to do, and the state of charge is 32.94736842
+At time period twenty-one, EV6 is charging, and the state of charge is 61.44736842
+At time period twenty-two, EV6 is out to work, and the state of charge is 41.44736842
+At time period twenty-three, EV6 has nothing to do, and the state of charge is 41.44736842
+At time period twenty-four, EV6 has nothing to do, and the state of charge is 41.44736842
+
+The initial SOC of EV7 is 40.
+At time period one, EV7 is charging, and the state of charge is 68.5
+At time period two, EV7 is selling back, and the state of charge is 47.44736842
+At time period three, EV7 has nothing to do, and the state of charge is 47.44736842
+At time period four, EV7 has nothing to do, and the state of charge is 47.44736842
+At time period five, EV7 is charging, and the state of charge is 75.94736842
+At time period six, EV7 has nothing to do, and the state of charge is 75.94736842
+At time period seven, EV7 has nothing to do, and the state of charge is 75.94736842
+At time period eight, EV7 is out to work, and the state of charge is 55.94736842
+At time period nine, EV7 has nothing to do, and the state of charge is 55.94736842
+At time period ten, EV7 has nothing to do, and the state of charge is 55.94736842
+At time period eleven, EV7 is out to work, and the state of charge is 35.94736842
+At time period twelve, EV7 is charging, and the state of charge is 64.44736842
+At time period thirteen, EV7 has nothing to do, and the state of charge is 64.44736842
+At time period fourteen, EV7 has nothing to do, and the state of charge is 64.44736842
+At time period fifteen, EV7 is out to work, and the state of charge is 44.44736842
+At time period sixteen, EV7 is charging, and the state of charge is 72.94736842
+At time period seventeen, EV7 has nothing to do, and the state of charge is 72.94736842
+At time period eighteen, EV7 is out to work, and the state of charge is 52.94736842
+At time period ninteen, EV7 is selling back, and the state of charge is 31.89473684
+At time period twenty, EV7 has nothing to do, and the state of charge is 31.89473684
+At time period twenty-one, EV7 has nothing to do, and the state of charge is 31.89473684
+At time period twenty-two, EV7 is charging, and the state of charge is 60.39473684
+At time period twenty-three, EV7 is out to work, and the state of charge is 40.39473684
+At time period twenty-four, EV7 has nothing to do, and the state of charge is 40.39473684
+
+The initial SOC of EV8 is 40.
+At time period one, EV8 has nothing to do, and the state of charge is 40
+At time period two, EV8 has nothing to do, and the state of charge is 40
+At time period three, EV8 is charging, and the state of charge is 68.5
+At time period four, EV8 has nothing to do, and the state of charge is 68.5
+At time period five, EV8 has nothing to do, and the state of charge is 68.5
+At time period six, EV8 has nothing to do, and the state of charge is 68.5
+At time period seven, EV8 has nothing to do, and the state of charge is 68.5
+At time period eight, EV8 is out to work, and the state of charge is 48.5
+At time period nine, EV8 is charging, and the state of charge is 77
+At time period ten, EV8 is out to work, and the state of charge is 57
+At time period eleven, EV8 has nothing to do, and the state of charge is 57
+At time period twelve, EV8 is out to work, and the state of charge is 37
+At time period thirteen, EV8 is charging, and the state of charge is 65.5
+At time period fourteen, EV8 has nothing to do, and the state of charge is 65.5
+At time period fifteen, EV8 has nothing to do, and the state of charge is 65.5
+At time period sixteen, EV8 is out to work, and the state of charge is 45.5
+At time period seventeen, EV8 is charging, and the state of charge is 74
+At time period eighteen, EV8 is out to work, and the state of charge is 54
+At time period ninteen, EV8 is out to work, and the state of charge is 34
+At time period twenty, EV8 has nothing to do, and the state of charge is 34
+At time period twenty-one, EV8 has nothing to do, and the state of charge is 34
+At time period twenty-two, EV8 has nothing to do, and the state of charge is 34
+At time period twenty-three, EV8 has nothing to do, and the state of charge is 34
+At time period twenty-four, EV8 is charging, and the state of charge is 62.5
+
+The initial SOC of EV9 is 40.
+At time period one, EV9 has nothing to do, and the state of charge is 40
+At time period two, EV9 has nothing to do, and the state of charge is 40
+At time period three, EV9 is charging, and the state of charge is 68.5
+At time period four, EV9 has nothing to do, and the state of charge is 68.5
+At time period five, EV9 has nothing to do, and the state of charge is 68.5
+At time period six, EV9 has nothing to do, and the state of charge is 68.5
+At time period seven, EV9 has nothing to do, and the state of charge is 68.5
+At time period eight, EV9 is out to work, and the state of charge is 48.5
+At time period nine, EV9 has nothing to do, and the state of charge is 48.5
+At time period ten, EV9 is charging, and the state of charge is 77
+At time period eleven, EV9 has nothing to do, and the state of charge is 77
+At time period twelve, EV9 has nothing to do, and the state of charge is 77
+At time period thirteen, EV9 has nothing to do, and the state of charge is 77
+At time period fourteen, EV9 is out to work, and the state of charge is 57
+At time period fifteen, EV9 has nothing to do, and the state of charge is 57
+At time period sixteen, EV9 has nothing to do, and the state of charge is 57
+At time period seventeen, EV9 is out to work, and the state of charge is 37
+At time period eighteen, EV9 is charging, and the state of charge is 65.5
+At time period ninteen, EV9 has nothing to do, and the state of charge is 65.5
+At time period twenty, EV9 is out to work, and the state of charge is 45.5
+At time period twenty-one, EV9 is selling back, and the state of charge is 24.44736842
+At time period twenty-two, EV9 has nothing to do, and the state of charge is 24.44736842
+At time period twenty-three, EV9 has nothing to do, and the state of charge is 24.44736842
+At time period twenty-four, EV9 is charging, and the state of charge is 52.94736842
+
+The initial SOC of EV10 is 40.
+At time period one, EV10 has nothing to do, and the state of charge is 40
+At time period two, EV10 has nothing to do, and the state of charge is 40
+At time period three, EV10 is charging, and the state of charge is 68.5
+At time period four, EV10 is out to work, and the state of charge is 48.5
+At time period five, EV10 is charging, and the state of charge is 77
+At time period six, EV10 has nothing to do, and the state of charge is 77
+At time period seven, EV10 has nothing to do, and the state of charge is 77
+At time period eight, EV10 has nothing to do, and the state of charge is 77
+At time period nine, EV10 is out to work, and the state of charge is 57
+At time period ten, EV10 has nothing to do, and the state of charge is 57
+At time period eleven, EV10 is out to work, and the state of charge is 37
+At time period twelve, EV10 is charging, and the state of charge is 65.5
+At time period thirteen, EV10 has nothing to do, and the state of charge is 65.5
+At time period fourteen, EV10 is out to work, and the state of charge is 45.5
+At time period fifteen, EV10 is charging, and the state of charge is 74
+At time period sixteen, EV10 is out to work, and the state of charge is 54
+At time period seventeen, EV10 is out to work, and the state of charge is 34
+At time period eighteen, EV10 is charging, and the state of charge is 62.5
+At time period ninteen, EV10 is out to work, and the state of charge is 42.5
+At time period twenty, EV10 is charging, and the state of charge is 71
+At time period twenty-one, EV10 is out to work, and the state of charge is 51
+At time period twenty-two, EV10 has nothing to do, and the state of charge is 51
+At time period twenty-three, EV10 has nothing to do, and the state of charge is 51
+At time period twenty-four, EV10 has nothing to do, and the state of charge is 51
+
+The initial SOC of EV11 is 40.
+At time period one, EV11 is charging, and the state of charge is 68.5
+At time period two, EV11 has nothing to do, and the state of charge is 68.5
+At time period three, EV11 is out to work, and the state of charge is 48.5
+At time period four, EV11 is charging, and the state of charge is 77
+At time period five, EV11 has nothing to do, and the state of charge is 77
+At time period six, EV11 has nothing to do, and the state of charge is 77
+At time period seven, EV11 has nothing to do, and the state of charge is 77
+At time period eight, EV11 has nothing to do, and the state of charge is 77
+At time period nine, EV11 is out to work, and the state of charge is 57
+At time period ten, EV11 has nothing to do, and the state of charge is 57
+At time period eleven, EV11 has nothing to do, and the state of charge is 57
+At time period twelve, EV11 has nothing to do, and the state of charge is 57
+At time period thirteen, EV11 has nothing to do, and the state of charge is 57
+At time period fourteen, EV11 has nothing to do, and the state of charge is 57
+At time period fifteen, EV11 is out to work, and the state of charge is 37
+At time period sixteen, EV11 has nothing to do, and the state of charge is 37
+At time period seventeen, EV11 is charging, and the state of charge is 65.5
+At time period eighteen, EV11 is out to work, and the state of charge is 45.5
+At time period ninteen, EV11 is selling back, and the state of charge is 24.44736842
+At time period twenty, EV11 has nothing to do, and the state of charge is 24.44736842
+At time period twenty-one, EV11 is charging, and the state of charge is 52.94736842
+At time period twenty-two, EV11 is out to work, and the state of charge is 32.94736842
+At time period twenty-three, EV11 has nothing to do, and the state of charge is 32.94736842
+At time period twenty-four, EV11 is charging, and the state of charge is 61.44736842
+
+The initial SOC of EV12 is 40.
+At time period one, EV12 is charging, and the state of charge is 68.5
+At time period two, EV12 has nothing to do, and the state of charge is 68.5
+At time period three, EV12 is out to work, and the state of charge is 48.5
+At time period four, EV12 has nothing to do, and the state of charge is 48.5
+At time period five, EV12 has nothing to do, and the state of charge is 48.5
+At time period six, EV12 is charging, and the state of charge is 77
+At time period seven, EV12 has nothing to do, and the state of charge is 77
+At time period eight, EV12 has nothing to do, and the state of charge is 77
+At time period nine, EV12 is out to work, and the state of charge is 57
+At time period ten, EV12 has nothing to do, and the state of charge is 57
+At time period eleven, EV12 is selling back, and the state of charge is 35.94736842
+At time period twelve, EV12 is charging, and the state of charge is 64.44736842
+At time period thirteen, EV12 has nothing to do, and the state of charge is 64.44736842
+At time period fourteen, EV12 has nothing to do, and the state of charge is 64.44736842
+At time period fifteen, EV12 has nothing to do, and the state of charge is 64.44736842
+At time period sixteen, EV12 is out to work, and the state of charge is 44.44736842
+At time period seventeen, EV12 is charging, and the state of charge is 72.94736842
+At time period eighteen, EV12 is out to work, and the state of charge is 52.94736842
+At time period ninteen, EV12 has nothing to do, and the state of charge is 52.94736842
+At time period twenty, EV12 is out to work, and the state of charge is 32.94736842
+At time period twenty-one, EV12 has nothing to do, and the state of charge is 32.94736842
+At time period twenty-two, EV12 is charging, and the state of charge is 61.44736842
+At time period twenty-three, EV12 is out to work, and the state of charge is 41.44736842
+At time period twenty-four, EV12 has nothing to do, and the state of charge is 41.44736842
+
+The minimum cost is 25760.
